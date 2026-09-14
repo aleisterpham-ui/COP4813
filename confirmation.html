@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Confirmation page for Aleister Pham's COP4813 Assignment 3 HTML form.">
+
+    <title>Confirm Information | Aleister Pham</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Review Your Information</h1>
+        <p>COP4813 - Web Systems I</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="assignments.html">Assignments</a>
+        <a href="form.html">Form</a>
+    </nav>
+
+    <main>
+
+        <section>
+
+            <h2>Please Confirm Your Information</h2>
+
+            <p>
+                Review the information below. If something is incorrect,
+                choose Edit Information. If everything is correct,
+                choose Confirm and Email.
+            </p>
+
+            <div class="confirmation-card">
+
+                <dl>
+
+                    <dt>First Name</dt>
+                    <dd id="confirmFirstName"></dd>
+
+                    <dt>Last Name</dt>
+                    <dd id="confirmLastName"></dd>
+
+                    <dt>Street Address</dt>
+                    <dd id="confirmAddress"></dd>
+
+                    <dt>City</dt>
+                    <dd id="confirmCity"></dd>
+
+                    <dt>State</dt>
+                    <dd id="confirmState"></dd>
+
+                    <dt>ZIP Code</dt>
+                    <dd id="confirmZip"></dd>
+
+                    <dt>Phone Number</dt>
+                    <dd id="confirmPhone"></dd>
+
+                    <dt>Email Address</dt>
+                    <dd id="confirmEmail"></dd>
+
+                    <dt>Birth Date</dt>
+                    <dd id="confirmBirthdate"></dd>
+
+                    <dt>Message</dt>
+                    <dd id="confirmMessage"></dd>
+
+                </dl>
+
+            </div>
+
+            <div class="form-actions">
+
+                <button type="button" id="editButton">
+                    Edit Information
+                </button>
+
+                <button type="button" id="confirmButton">
+                    Confirm and Email
+                </button>
+
+            </div>
+
+            <p id="confirmationStatus" aria-live="polite"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by Aleister Viencent Pham</p>
+    </footer>
+
+    <script src="js/confirmation.js"></script>
+
+</body>
+
+</html>
