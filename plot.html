@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Assignment 4 JavaScript calculator and plotting project for Aleister Pham's COP4813 Web Systems I course.">
+
+    <title>Assignment 4 - Creating Plots | Aleister Pham</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Assignment 4 - Creating Plots</h1>
+        <p>COP4813 - Web Systems I</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="assignments.html">Assignments</a>
+        <a href="form.html">Form</a>
+        <a href="plot.html" aria-current="page">Plot</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Damped Oscillation Calculator</h2>
+
+            <p>
+                This calculator uses the damped oscillation equation:
+            </p>
+
+            <p>
+                <strong>y = A × e<sup>-kx</sup> × sin(ωx + φ)</strong>
+            </p>
+
+            <p>
+                In this equation, x is the independent variable and y is the
+                dependent variable. Change the values below and select
+                Calculate and Plot to see the results.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>Equation Inputs</h2>
+
+            <form id="plotForm">
+
+                <fieldset>
+                    <legend>Equation Variables</legend>
+
+                    <label for="amplitude">
+                        Amplitude (A)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="amplitude"
+                        name="amplitude"
+                        value="10"
+                        step="any"
+                        required>
+
+
+                    <label for="decay">
+                        Decay Rate (k)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="decay"
+                        name="decay"
+                        value="0.15"
+                        step="any"
+                        min="0"
+                        required>
+
+
+                    <label for="frequency">
+                        Angular Frequency (ω)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="frequency"
+                        name="frequency"
+                        value="2"
+                        step="any"
+                        required>
+
+
+                    <label for="phase">
+                        Phase (φ)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="phase"
+                        name="phase"
+                        value="0"
+                        step="any"
+                        required>
+
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>X-Axis Range</legend>
+
+                    <label for="xMin">
+                        Minimum X
+                    </label>
+
+                    <input
+                        type="number"
+                        id="xMin"
+                        name="xMin"
+                        value="0"
+                        step="any"
+                        required>
+
+
+                    <label for="xMax">
+                        Maximum X
+                    </label>
+
+                    <input
+                        type="number"
+                        id="xMax"
+                        name="xMax"
+                        value="20"
+                        step="any"
+                        required>
+
+
+                    <label for="step">
+                        Step Size
+                    </label>
+
+                    <input
+                        type="number"
+                        id="step"
+                        name="step"
+                        value="0.1"
+                        step="any"
+                        min="0.01"
+                        required>
+
+                </fieldset>
+
+
+                <button type="submit">
+                    Calculate and Plot
+                </button>
+
+                <button type="reset" id="resetButton">
+                    Reset Values
+                </button>
+
+            </form>
+
+            <p id="plotMessage" aria-live="polite"></p>
+
+        </section>
+
+
+        <section>
+            <h2>Damped Oscillation Plot</h2>
+
+            <div class="chart-container">
+                <canvas
+                    id="oscillationChart"
+                    aria-label="Graph of damped oscillation equation"
+                    role="img">
+                </canvas>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>Calculated Values</h2>
+
+            <div class="results-table-wrapper">
+
+                <table id="resultsTable">
+
+                    <thead>
+                        <tr>
+                            <th scope="col">X</th>
+                            <th scope="col">Y</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="resultsBody">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Created by Aleister Viencent Pham</p>
+    </footer>
+
+
+    <script src="js/plot.js"></script>
+
+</body>
+
+</html>
