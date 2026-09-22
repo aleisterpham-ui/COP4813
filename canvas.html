@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Assignment 5 HTML5 Canvas Spirograph for Aleister Pham's COP4813 Web Systems I course.">
+
+    <title>Assignment 5 - Canvas | Aleister Pham</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Assignment 5 - Canvas</h1>
+        <p>COP4813 - Web Systems I</p>
+    </header>
+
+    <nav id="site-nav" aria-label="Main navigation"></nav>
+
+    <main>
+
+        <section>
+            <h2>HTML5 Canvas Spirograph</h2>
+
+            <p>
+                This program uses HTML5 Canvas and JavaScript to create
+                a Spirograph pattern.
+            </p>
+
+            <p>
+                Enter values for the outer radius (R), inner radius (r),
+                and pen offset (O), then select Start Drawing.
+            </p>
+
+            <p>
+                <strong>
+                    x = (R + r) cos(t) − (r + O) cos(((R + r) / r)t)
+                </strong>
+            </p>
+
+            <p>
+                <strong>
+                    y = (R + r) sin(t) − (r + O) sin(((R + r) / r)t)
+                </strong>
+            </p>
+        </section>
+
+
+        <section>
+
+            <h2>Spirograph Settings</h2>
+
+            <form id="spiroForm">
+
+                <fieldset>
+
+                    <legend>Drawing Values</legend>
+
+                    <label for="outerRadius">
+                        Outer Circle Radius (R)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="outerRadius"
+                        name="outerRadius"
+                        min="50"
+                        max="200"
+                        value="120"
+                        required>
+
+                    <small>
+                        Enter a value between 50 and 200.
+                    </small>
+
+
+                    <label for="innerRadius">
+                        Inner Circle Radius (r)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="innerRadius"
+                        name="innerRadius"
+                        min="10"
+                        max="150"
+                        value="45"
+                        required>
+
+                    <small>
+                        Enter a value between 10 and 150.
+                        The inner radius cannot be greater than R.
+                    </small>
+
+
+                    <label for="penOffset">
+                        Pen Offset (O)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="penOffset"
+                        name="penOffset"
+                        min="0"
+                        max="150"
+                        value="35"
+                        required>
+
+                    <small>
+                        Enter a value from 0 up to the inner radius.
+                    </small>
+
+                </fieldset>
+
+
+                <button type="submit" id="startButton">
+                    Start Drawing
+                </button>
+
+            </form>
+
+            <p id="canvasMessage" aria-live="polite"></p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Spirograph Drawing</h2>
+
+            <div class="canvas-wrapper">
+
+                <canvas
+                    id="spiroCanvas"
+                    width="700"
+                    height="700"
+                    role="img"
+                    aria-label="Spirograph drawing">
+                    Your browser does not support HTML5 Canvas.
+                </canvas>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Created by Aleister Pham</p>
+    </footer>
+
+
+    <script src="js/canvas.js"></script>
+    <script src="js/nav.js"></script>
+
+</body>
+
+</html>

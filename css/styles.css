@@ -250,3 +250,25 @@ button:focus {
         height: 320px;
     }
 }
+/* Assignment 5 - Canvas */
+
+.canvas-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+#spiroCanvas {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    background-color: white;
+    border: 2px solid #cccccc;
+    border-radius: 6px;
+}
+
+#canvasMessage {
+    margin-top: 15px;
+    font-weight: bold;
+}
