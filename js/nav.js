@@ -8,13 +8,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentPage =
         window.location.pathname.split("/").pop() || "index.html";
 
-    const links = [
-        { href: "index.html", text: "Home" },
-        { href: "assignments.html", text: "Assignments" },
-        { href: "form.html", text: "Form" },
-        { href: "plot.html", text: "Plot" },
-        { href: "canvas.html", text: "Canvas" }
-    ];
+const links = [
+    { href: "index.html", text: "Home" },
+    { href: "assignments.html", text: "Assignments" },
+    { href: "form.html", text: "Form" },
+    { href: "plot.html", text: "Plot" },
+    { href: "canvas.html", text: "Canvas" },
+    { href: "json.html", text: "JSON" }
+];
 
     links.forEach(function (linkInfo) {
         const link = document.createElement("a");

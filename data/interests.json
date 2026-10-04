@@ -1,0 +1,32 @@
+[
+    {
+        "topic": "Artificial Intelligence",
+        "category": "Technology",
+        "interestLevel": 10,
+        "description": "Learning how intelligent systems can solve problems, recognize patterns, and assist people."
+    },
+    {
+        "topic": "Robotics",
+        "category": "Engineering",
+        "interestLevel": 9,
+        "description": "Combining software, sensors, electronics, and mechanical systems to build intelligent machines."
+    },
+    {
+        "topic": "Cybersecurity",
+        "category": "Technology",
+        "interestLevel": 9,
+        "description": "Protecting computers, networks, applications, and data from unauthorized access and attacks."
+    },
+    {
+        "topic": "Web Development",
+        "category": "Programming",
+        "interestLevel": 8,
+        "description": "Creating websites and web applications using HTML, CSS, JavaScript, and other technologies."
+    },
+    {
+        "topic": "Linux",
+        "category": "Operating Systems",
+        "interestLevel": 8,
+        "description": "Learning command-line tools, system administration, networking, and open-source computing."
+    }
+]

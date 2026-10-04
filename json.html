@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Assignment 6 JSON project for Aleister Pham's COP4813 Web Systems I course.">
+
+    <title>Assignment 6 - JSON | Aleister Pham</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Assignment 6 - JSON</h1>
+        <p>COP4813 - Web Systems I</p>
+    </header>
+
+    <nav id="site-nav" aria-label="Main navigation"></nav>
+
+    <main>
+
+        <section>
+            <h2>Technology Interests</h2>
+
+            <p>
+                This page loads information from an external JSON file
+                and displays the data dynamically using JavaScript.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>JSON Data</h2>
+
+            <p id="jsonStatus" aria-live="polite">
+                Loading data...
+            </p>
+
+            <div class="results-table-wrapper">
+
+                <table id="jsonTable">
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Topic</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Interest Level</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="jsonTableBody">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Created by Aleister Pham</p>
+    </footer>
+
+
+    <script src="js/json.js"></script>
+    <script src="js/nav.js"></script>
+
+</body>
+
+</html>
