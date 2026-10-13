@@ -14,7 +14,8 @@ const links = [
     { href: "form.html", text: "Form" },
     { href: "plot.html", text: "Plot" },
     { href: "canvas.html", text: "Canvas" },
-    { href: "json.html", text: "JSON" }
+    { href: "json.html", text: "JSON" },
+    { href: "dragdrop.html", text: "Drag Drop" }
 ];
 
     links.forEach(function (linkInfo) {

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Assignment 7 HTML5 Drag and Drop project for Aleister Pham's COP4813 Web Systems I course.">
+
+    <title>Assignment 7 - Drag Drop | Aleister Pham</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Assignment 7 - Drag Drop</h1>
+        <p>COP4813 - Web Systems I</p>
+    </header>
+
+    <nav id="site-nav" aria-label="Main navigation"></nav>
+
+    <main>
+
+        <section>
+
+            <h2>Card Drag and Drop</h2>
+
+            <p>
+                Select Deal Cards to create a hand. Drag any card from
+                the hand into the discard pile.
+            </p>
+
+            <button type="button" id="dealButton">
+                Deal Cards
+            </button>
+
+            <p id="dragMessage" aria-live="polite">
+                Select Deal Cards to begin.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Your Hand</h2>
+
+<div
+    id="cardHand"
+    class="card-hand">
+</div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Discard Pile</h2>
+
+          <div
+    id="discardPile"
+    class="discard-pile">
+
+    <p>Drag a card here to discard it.</p>
+
+</div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Created by Aleister Pham</p>
+    </footer>
+
+
+    <script src="js/dragdrop.js"></script>
+    <script src="js/nav.js"></script>
+
+</body>
+
+</html>
