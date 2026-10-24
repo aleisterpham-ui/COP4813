@@ -15,7 +15,8 @@ const links = [
     { href: "plot.html", text: "Plot" },
     { href: "canvas.html", text: "Canvas" },
     { href: "json.html", text: "JSON" },
-    { href: "dragdrop.html", text: "Drag Drop" }
+    { href: "dragdrop.html", text: "Drag Drop" },
+    { href: "animation.html", text: "Animation" }
 ];
 
     links.forEach(function (linkInfo) {

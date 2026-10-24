@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Assignment 9 JavaScript animation project for Aleister Pham's COP4813 Web Systems I course.">
+
+    <title>Assignment 9 - Animation | Aleister Pham</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Assignment 9 - Animation</h1>
+        <p>COP4813 - Web Systems I</p>
+    </header>
+
+    <nav id="site-nav" aria-label="Main navigation"></nav>
+
+    <main>
+
+        <section>
+            <h2>Bouncing Ball Animation</h2>
+
+            <p>
+                This HTML5 Canvas animation moves a ball diagonally across
+                a bounded area. The ball bounces when it reaches an edge.
+            </p>
+
+            <p>
+                Click directly on the moving ball to change its color
+                and reverse its direction.
+            </p>
+
+            <p id="animationMessage" aria-live="polite">
+                Animation running. Try clicking the ball.
+            </p>
+        </section>
+
+        <section>
+            <h2>Animation Canvas</h2>
+
+            <div class="animation-wrapper">
+
+                <canvas
+                    id="animationCanvas"
+                    width="800"
+                    height="500"
+                    role="img"
+                    aria-label="Animated bouncing ball canvas">
+                    Your browser does not support HTML5 Canvas.
+                </canvas>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by Aleister Pham</p>
+    </footer>
+
+    <script src="js/animation.js"></script>
+    <script src="js/nav.js"></script>
+
+</body>
+
+</html>

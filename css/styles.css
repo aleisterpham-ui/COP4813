@@ -382,4 +382,25 @@ button:focus {
         width: 110px;
         height: 157px;
     }
+}/* Assignment 9 - Animation */
+
+.animation-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+#animationCanvas {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    background-color: #ffffff;
+    border: 3px solid #1f4e79;
+    border-radius: 8px;
+}
+
+#animationMessage {
+    margin-top: 15px;
+    font-weight: bold;
 }
