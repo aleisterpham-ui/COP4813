@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Assignment 10 Mobile Ready Lighthouse analysis for Aleister Pham's COP4813 Web Systems I course.">
+
+    <title>Assignment 10 - Mobile Ready | Aleister Pham</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Assignment 10 - Mobile Ready</h1>
+        <p>COP4813 - Web Systems I</p>
+    </header>
+
+    <nav id="site-nav" aria-label="Main navigation"></nav>
+
+    <main>
+
+        <section>
+            <h2>Lighthouse Mobile Analysis</h2>
+
+            <p>
+                I tested the home page of my website using Google Chrome
+                Lighthouse in Navigation mode with the Mobile device setting.
+                The audit evaluated Performance, Accessibility, Best Practices,
+                and SEO.
+            </p>
+
+            <h3>Overall Scores</h3>
+
+            <ul>
+                <li>Performance: 73</li>
+                <li>Accessibility: 100</li>
+                <li>Best Practices: 100</li>
+                <li>SEO: 100</li>
+            </ul>
+
+            <img
+                src="images/lighthouse/overall.png"
+                alt="Lighthouse overall mobile scores showing Performance 73, Accessibility 100, Best Practices 100, and SEO 100">
+
+        </section>
+
+
+        <section>
+            <h2>Performance Analysis</h2>
+
+            <p>
+                The Performance score was 73. Lighthouse reported that the
+                page loaded its first content quickly, but some performance
+                issues reduced the overall score. The Largest Contentful Paint
+                was 4.6 seconds and the Speed Index was 33.2 seconds.
+            </p>
+
+            <p>
+                Lighthouse recommended improving image delivery, using more
+                efficient cache lifetimes, reducing unused JavaScript, and
+                adding explicit width and height values to images. The report
+                also identified render-blocking requests and several long
+                main-thread tasks.
+            </p>
+
+            <img
+                src="images/lighthouse/performance.png"
+                alt="Lighthouse Performance audit results and recommendations">
+
+        </section>
+
+
+        <section>
+            <h2>Accessibility Analysis</h2>
+
+            <p>
+                The Accessibility score was 100. The page passed checks for
+                alternative text on images, sufficient color contrast, valid
+                ARIA attributes, descriptive links, appropriate heading order,
+                and properly sized touch targets.
+            </p>
+
+            <img
+                src="images/lighthouse/accessibility.png"
+                alt="Lighthouse Accessibility audit showing a score of 100 and passed accessibility checks">
+
+        </section>
+
+
+        <section>
+            <h2>Best Practices Analysis</h2>
+
+            <p>
+                The Best Practices score was 100. The website uses HTTPS,
+                avoids deprecated APIs and unnecessary permission requests,
+                displays images with the correct aspect ratio, uses a valid
+                HTML doctype and character set, and produced no browser
+                console errors during the Lighthouse audit.
+            </p>
+
+            <img
+                src="images/lighthouse/best-practices.png"
+                alt="Lighthouse Best Practices audit showing passed checks">
+
+        </section>
+
+
+        <section>
+            <h2>SEO Analysis</h2>
+
+            <p>
+                The SEO score was 100. Lighthouse confirmed that the page can
+                be indexed, includes a title and meta description, returns a
+                successful HTTP status code, uses descriptive and crawlable
+                links, and provides alternative text for images.
+            </p>
+
+            <img
+                src="images/lighthouse/seo.png"
+                alt="Lighthouse SEO audit showing a score of 100 and passed SEO checks">
+
+        </section>
+
+
+        <section>
+            <h2>Conclusion</h2>
+
+            <p>
+                The Lighthouse audit shows that the website performs very well
+                in Accessibility, Best Practices, and SEO. The main area for
+                improvement is Performance, especially image delivery and page
+                loading speed. The website remains usable on mobile devices,
+                and the audit provides clear areas that could be improved in
+                future development.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by Aleister Pham</p>
+    </footer>
+
+    <script src="js/nav.js"></script>
+
+</body>
+
+</html>
