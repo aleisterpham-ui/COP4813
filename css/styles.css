@@ -404,3 +404,14 @@ button:focus {
     margin-top: 15px;
     font-weight: bold;
 }
+/* Assignment 10 - Mobile Ready */
+
+img[src^="images/lighthouse/"] {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
