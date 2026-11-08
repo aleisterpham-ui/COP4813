@@ -1,0 +1,147 @@
+
+{
+  "program": "BSIT Course Advisor",
+  "school": "Daytona State College",
+  "catalogYear": "2026-2027",
+  "description": "Demonstration subset of BSIT courses for academic planning.",
+  "choiceGroups": [
+    {
+      "id": "programming",
+      "label": "Programming Pathway",
+      "courseIds": ["COP2800", "COP2220", "COP2360"],
+      "maxSelections": 1,
+      "note": "Choose one programming pathway course."
+    },
+    {
+      "id": "discrete",
+      "label": "Discrete Mathematics",
+      "courseIds": ["COT3100", "MAD2104"],
+      "maxSelections": 1,
+      "note": "Choose one discrete mathematics option."
+    }
+  ],
+  "courses": [
+    {
+      "id": "COP1000",
+      "title": "Principles of Computer Programming",
+      "credits": 3,
+      "category": "Foundation",
+      "requires": []
+    },
+    {
+      "id": "MAC1105",
+      "title": "College Algebra",
+      "credits": 3,
+      "category": "Foundation",
+      "requires": [],
+      "note": "College placement requirements may apply."
+    },
+    {
+      "id": "MAC1114",
+      "title": "College Trigonometry",
+      "credits": 3,
+      "category": "Foundation",
+      "requires": [["MAC1105"]]
+    },
+    {
+      "id": "COP2800",
+      "title": "Computer Programming Java",
+      "credits": 3,
+      "category": "Programming",
+      "requires": [["COP1000"]],
+      "choiceGroup": "programming"
+    },
+    {
+      "id": "COP2220",
+      "title": "Computer Programming C",
+      "credits": 3,
+      "category": "Programming",
+    "requires": [["COP1000"], ["MAC1105"]],
+      "choiceGroup": "programming"
+    },
+    {
+      "id": "COP2360",
+      "title": "C# Programming",
+      "credits": 3,
+      "category": "Programming",
+      "requires": [["COP1000"]],
+      "choiceGroup": "programming"
+    },
+    {
+      "id": "COT3100",
+      "title": "Discrete Computational Analysis",
+      "credits": 3,
+      "category": "Mathematics",
+      "requires": [["MAC1105"]],
+      "choiceGroup": "discrete"
+    },
+    {
+      "id": "MAD2104",
+      "title": "Discrete Mathematics",
+      "credits": 3,
+      "category": "Mathematics",
+      "requires": [],
+      "corequisites": ["MAC1114"],
+      "manualReview": true,
+      "choiceGroup": "discrete",
+      "note": "Review the catalog for corequisite, placement, and permission exceptions."
+    },
+    {
+      "id": "COP3530",
+      "title": "Data Structures",
+      "credits": 3,
+      "category": "BSIT Core",
+      "requires": [
+        ["COP2800", "COP2220", "COP2360"],
+        ["COT3100", "MAD2104"]
+      ]
+    },
+    {
+      "id": "COP4708",
+      "title": "Applied Database I",
+      "credits": 3,
+      "category": "BSIT Core",
+      "requires": [
+        ["COP2800", "COP2220", "COP2360"]
+      ]
+    },
+    {
+      "id": "COP4813",
+      "title": "Web Systems I",
+      "credits": 3,
+      "category": "BSIT Core",
+      "requires": [["COP3530"]]
+    },
+    {
+      "id": "COP4834",
+      "title": "Web Systems II",
+      "credits": 3,
+      "category": "Program Elective",
+      "requires": [["COP4813"]]
+    },
+    {
+      "id": "CTS3348",
+      "title": "Linux Administration",
+      "credits": 3,
+      "category": "BSIT Core",
+      "requires": [["MAC1105"]]
+    },
+    {
+      "id": "COP4610",
+      "title": "Operating Systems",
+      "credits": 3,
+      "category": "BSIT Core",
+      "requires": [["CTS3348"]]
+    },
+    {
+      "id": "CEN4801",
+      "title": "Systems Integration",
+      "credits": 3,
+      "category": "BSIT Core",
+      "requires": [
+        ["COP4708"],
+        ["COP3530"]
+      ]
+    }
+  ]
+}

@@ -415,3 +415,114 @@ img[src^="images/lighthouse/"] {
     border-radius: 6px;
     box-sizing: border-box;
 }
+
+/* Assignment 11 - Dynamic Objects */
+
+#advisorStatus {
+    padding: 12px 15px;
+    margin-top: 20px;
+    background-color: #e7f0f8;
+    border-left: 4px solid #1f4e79;
+    font-weight: bold;
+}
+
+.advisor-completed-row {
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    background-color: #f7f9fb;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+}
+
+.advisor-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.advisor-checkbox-label input {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.advisor-note {
+    display: block;
+    margin-top: 8px;
+    color: #555555;
+    font-size: 0.9rem;
+}
+
+.advisor-course-card {
+    padding: 20px;
+    margin: 15px 0;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-left: 5px solid #1f4e79;
+    border-radius: 8px;
+}
+
+.advisor-course-card h4 {
+    margin-top: 0;
+}
+
+.advisor-course-card button,
+.advisor-plan-card button {
+    margin: 8px 8px 8px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.advisor-course-card[draggable="true"] {
+    cursor: grab;
+}
+
+.advisor-unavailable {
+    background-color: #f5f5f5;
+    border-left-color: #999999;
+}
+
+.advisor-secondary-button {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+.advisor-dropzone {
+    min-height: 180px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f7f9fb;
+    border: 3px dashed #1f4e79;
+    border-radius: 10px;
+}
+
+.advisor-drag-over {
+    background-color: #e0efff;
+    border-style: solid;
+}
+
+.advisor-plan-card {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+    .advisor-course-card,
+    .advisor-plan-card,
+    .advisor-dropzone {
+        padding: 15px;
+    }
+
+    .advisor-checkbox-label {
+        align-items: flex-start;
+    }
+}

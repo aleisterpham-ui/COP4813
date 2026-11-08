@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Assignment 11 Dynamic Objects course advisor for Aleister Pham's COP4813 Web Systems I course.">
+
+    <title>Assignment 11 - Dynamic Objects | Aleister Pham</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Assignment 11 - Dynamic Objects</h1>
+        <p>COP4813 - Web Systems I</p>
+    </header>
+
+    <nav id="site-nav" aria-label="Main navigation"></nav>
+
+    <main>
+
+        <section>
+            <h2>BSIT Student Course Advisor</h2>
+
+            <p>
+                Welcome to the Daytona State College
+                BSIT Course Advisor demonstration.
+            </p>
+
+            <p>
+                Select the courses you have already completed.
+                The advisor will use course prerequisites to
+                determine which classes you may take next.
+            </p>
+
+            <p>
+                Add eligible courses to your plan by dragging
+                them into the course plan area or using the
+                Add to Plan buttons.
+            </p>
+
+            <p>
+                This is an academic planning demonstration.
+                Always confirm course requirements with
+                the official college catalog.
+            </p>
+
+            <p id="advisorStatus" role="status">
+                Loading course data...
+            </p>
+        </section>
+
+
+        <section>
+            <h2>1. Completed Courses</h2>
+
+            <p>
+                Check the courses you have already taken.
+                Your available course options will update
+                automatically.
+            </p>
+
+            <div id="completedCourses">
+                <p>Loading courses...</p>
+            </div>
+
+        </section>
+
+
+        <section>
+            <h2>2. Available Courses</h2>
+
+            <p>
+                These courses are available based on the
+                prerequisites you have completed.
+            </p>
+
+            <div id="availableCourses">
+                <p>Select your completed courses to begin.</p>
+            </div>
+
+        </section>
+
+
+        <section>
+            <h2>3. My Course Plan</h2>
+
+            <p>
+                Drag available courses into this area or
+                select Add to Plan.
+            </p>
+
+            <div id="coursePlan" class="advisor-dropzone">
+                <p>No courses added to your plan yet.</p>
+            </div>
+
+            <p>
+                <strong>Total Planned Credits:</strong>
+                <span id="planCredits">0</span>
+            </p>
+
+            <button type="button" id="clearPlanButton">
+                Clear Course Plan
+            </button>
+
+        </section>
+
+
+        <section>
+            <h2>4. Course Information</h2>
+
+            <p>
+                Select a course's Details button to view
+                its prerequisites and additional notes.
+            </p>
+
+            <div id="courseNotes">
+                <p>No course selected.</p>
+            </div>
+
+        </section>
+
+<section>
+    <h2>5. Implementation Details and Modifications</h2>
+
+    <p>
+        This course advisor was developed for the Daytona State
+        College BSIT program using HTML, CSS, JavaScript, and JSON.
+    </p>
+
+    <h3>Features and Modifications</h3>
+
+    <ul>
+        <li>Created a custom JSON dataset containing 15 courses.</li>
+        <li>Dynamically generated course checkboxes using JavaScript.</li>
+        <li>Implemented AND and OR prerequisite checking.</li>
+        <li>Disabled conflicting alternative course selections.</li>
+        <li>Added course details, prerequisite descriptions, and notes.</li>
+        <li>Added drag-and-drop course planning.</li>
+        <li>Added buttons for adding and removing courses.</li>
+        <li>Implemented automatic planned-credit calculations.</li>
+        <li>Added automatic eligibility updates when selections change.</li>
+        <li>Designed a responsive interface for desktop and mobile.</li>
+    </ul>
+
+    <p>
+        This project is a demonstration using a subset of courses.
+        Students should verify requirements with the official catalog.
+    </p>
+</section>
+
+    </main>
+
+    <footer>
+        <p>Created by Aleister Pham</p>
+    </footer>
+
+    <script src="js/advisor.js"></script>
+    <script src="js/nav.js"></script>
+
+</body>
+
+</html>
