@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Assignment 12 CMS comparison for Aleister Pham's COP4813 Web Systems I course.">
+
+    <title>Assignment 12 - CMS Review | Aleister Pham</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Assignment 12 - CMS Review</h1>
+        <p>COP4813 - Web Systems I</p>
+    </header>
+
+    <nav id="site-nav" aria-label="Main navigation"></nav>
+
+    <main>
+
+        <section>
+
+            <h2>Content Management Systems Comparison</h2>
+
+            <p>
+                A Content Management System (CMS) is software
+                that allows users to create, manage, and publish
+                website content.
+            </p>
+
+            <p>
+                This assignment compares five popular content
+                management systems based on their support,
+                technology, major capabilities, limitations,
+                and example websites.
+            </p>
+
+            <p>
+                The comparison data is stored in an external
+                JSON file and loaded dynamically using JavaScript.
+            </p>
+
+            <p id="cmsStatus" role="status">
+                Loading CMS data...
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>CMS Comparison Table</h2>
+
+            <div class="cms-table-wrapper">
+
+                <table id="cmsTable">
+
+                    <caption>
+                        Comparison of Five Content Management Systems
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">System</th>
+                            <th scope="col">Produced / Supported By</th>
+                            <th scope="col">Technology Base</th>
+                            <th scope="col">Major Capabilities</th>
+                            <th scope="col">Major Limitations</th>
+                            <th scope="col">Example Site</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="cmsTableBody">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Research Summary</h2>
+
+            <p>
+                Each CMS has different strengths and limitations.
+                WordPress is popular for general websites,
+                Drupal and TYPO3 provide advanced content
+                management features, Joomla offers flexible
+                website development, and Ghost focuses on
+                publishing and memberships.
+            </p>
+
+            <p>
+                The best CMS depends on the website's purpose,
+                technical requirements, available resources,
+                and long-term maintenance needs.
+            </p>
+
+            <p>
+                Research sources are provided with each CMS
+                entry in the comparison table.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by Aleister Pham</p>
+    </footer>
+
+    <script src="js/cms.js"></script>
+    <script src="js/nav.js"></script>
+
+</body>
+
+</html>

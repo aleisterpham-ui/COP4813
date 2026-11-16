@@ -1,0 +1,98 @@
+
+[
+  {
+    "name": "WordPress",
+    "support": "Open-source project supported by a worldwide developer community and commercial hosting providers.",
+    "technology": "Server: PHP. Database: MySQL or MariaDB. Client: HTML, CSS, and JavaScript.",
+    "capabilities": "Custom themes, plugins, block editor, media management, REST API, and SEO extensions.",
+    "limitations": "Requires regular updates. Third-party plugins may introduce security risks, compatibility problems, and performance issues.",
+    "exampleName": "NASA",
+    "exampleUrl": "https://www.nasa.gov/",
+    "sources": [
+      {
+        "label": "WordPress Features",
+        "url": "https://wordpress.org/about/features/"
+      },
+      {
+        "label": "NASA WordPress Showcase",
+        "url": "https://wordpress.org/showcase/nasa/"
+      }
+    ]
+  },
+  {
+    "name": "Drupal",
+    "support": "Open-source CMS maintained by the Drupal community and supported by organizations including the Drupal Association.",
+    "technology": "Server: PHP. Database: MySQL, MariaDB, PostgreSQL, or SQLite. Client: HTML, CSS, and JavaScript.",
+    "capabilities": "Custom content types, user permissions, multilingual support, content workflows, modules, and API-based publishing.",
+    "limitations": "Has a steeper learning curve. Complex customization and upgrades may require experienced developers and additional maintenance.",
+    "exampleName": "Penn State News",
+    "exampleUrl": "https://www.psu.edu/news",
+    "sources": [
+      {
+        "label": "Drupal Documentation",
+        "url": "https://www.drupal.org/docs/getting-started"
+      },
+      {
+        "label": "Penn State Drupal Case Study",
+        "url": "https://new.drupal.org/case-study/penn-state-news-simplifying-large-scale-publishing"
+      }
+    ]
+  },
+  {
+    "name": "Joomla",
+    "support": "Open-source CMS supported by the Joomla community and Open Source Matters.",
+    "technology": "Server: PHP. Database: MySQL, MariaDB, or PostgreSQL. Client: HTML, CSS, and JavaScript.",
+    "capabilities": "Templates, extensions, multilingual websites, user access controls, menus, and content management.",
+    "limitations": "Extension compatibility and updates require attention. Advanced customizations can require technical knowledge.",
+    "exampleName": "David Revuelta Photography",
+    "exampleUrl": "https://davidrevuelta.es",
+    "sources": [
+      {
+        "label": "Joomla Technical Requirements",
+        "url": "https://manual.joomla.org/docs/next/get-started/technical-requirements/"
+      },
+      {
+        "label": "Joomla Website Showcase",
+        "url": "https://showcase.joomla.org/browse-sites/25870.html"
+      }
+    ]
+  },
+  {
+    "name": "Ghost",
+    "support": "Open-source publishing platform developed by Ghost Foundation, with commercial Ghost(Pro) hosting available.",
+    "technology": "Server: Node.js. Database: MySQL for production installations. Client: HTML, CSS, and JavaScript.",
+    "capabilities": "Blog publishing, newsletters, memberships, paid subscriptions, custom themes, and content APIs.",
+    "limitations": "Mainly focused on publishing and newsletters. More complex website features may require custom development or third-party integrations.",
+    "exampleName": "The Browser",
+    "exampleUrl": "https://thebrowser.com/",
+    "sources": [
+      {
+        "label": "Ghost Features",
+        "url": "https://ghost.org/"
+      },
+      {
+        "label": "Ghost Publication Directory",
+        "url": "https://ghost.org/explore/"
+      }
+    ]
+  },
+  {
+    "name": "TYPO3",
+    "support": "Open-source enterprise CMS supported by the TYPO3 Association, developer community, and professional agencies.",
+    "technology": "Server: PHP. Database: MySQL, MariaDB, PostgreSQL, or SQLite. Client: HTML, CSS, and JavaScript.",
+    "capabilities": "Multilingual content, enterprise permissions, multisite management, custom extensions, content workflows, and integrations.",
+    "limitations": "Requires technical expertise for installation and customization. Development and maintenance can be more complex for small websites.",
+    "exampleName": "EUKANUBA",
+    "exampleUrl": "https://www.eukanuba.com/",
+    "sources": [
+      {
+        "label": "TYPO3 System Requirements",
+        "url": "https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/Administration/Installation/SystemRequirements/Index.html"
+      },
+      {
+        "label": "TYPO3 Case Studies",
+        "url": "https://typo3.com/case-studies"
+      }
+    ]
+  }
+]
